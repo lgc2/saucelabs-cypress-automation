@@ -2,7 +2,7 @@ name: saucelabs-cypress-automation
 
 on:
   push:
-    branches: [ ci ]
+    branches: [ main ]
     
   workflow_dispatch:
   
