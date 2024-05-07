@@ -4,13 +4,13 @@
             "name": "Sauce Labs Backpack",
             "price": 29.99,
             "quantity": 1,
-            "locator": "backpack"
+            "selector": "backpack"
         }
     ],
     "firstName": "Test",
     "lastName": "User",
     "zipCode": "12345",
-    "subtotal": "29.99",
-    "taxa": "7.84",
-    "total": "105.80"
+    "itemTotal": 29.99,
+    "tax": 2.40,
+    "total": 32.39
 }

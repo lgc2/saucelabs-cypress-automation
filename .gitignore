@@ -2,6 +2,7 @@
 cypress/screenshots/
 cypress/videos/
 cypress/reports/
+cypress/downloads/
 node_modules/
 
 # Result tests 
