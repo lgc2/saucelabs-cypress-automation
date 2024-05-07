@@ -1,0 +1,16 @@
+{
+    "products": [
+        {
+            "name": "Sauce Labs Backpack",
+            "price": 29.99,
+            "quantity": 1,
+            "locator": "backpack"
+        }
+    ],
+    "firstName": "Test",
+    "lastName": "User",
+    "zipCode": "12345",
+    "subtotal": "29.99",
+    "taxa": "7.84",
+    "total": "105.80"
+}
