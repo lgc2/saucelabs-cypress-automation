@@ -25,9 +25,3 @@ jobs:
 
       - name: Cypress run
         run: npm run cypress:run
-
-      - name: Publish Report
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./mochawesome-report
