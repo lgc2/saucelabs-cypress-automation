@@ -12,3 +12,13 @@ Cypress.Commands.add('login', (userName, password) => {
     cy.get('[data-test="login-button"]')
         .click()
 })
+
+Cypress.Commands.add('logout', () => {
+    cy.get('#react-burger-menu-btn')
+        .should('be.visible')
+        .click()
+
+    cy.get('[data-test="logout-sidebar-link"]')
+        .should('be.visible')
+        .click()
+})

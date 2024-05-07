@@ -2,7 +2,7 @@
 
 import standardUserData from '../../fixtures/standard-user-data.json'
 
-describe('login tests', () => {
+describe('authentication tests', () => {
   beforeEach(() => {
     cy.visit(Cypress.env('baseUrl'))
   })
@@ -40,5 +40,13 @@ describe('login tests', () => {
     cy.get('[data-test="error"]')
       .should('be.visible')
       .contains(invalidCredentialsErrorMessage)
+  })
+
+  it('should log out successfully', () => {
+    cy.login(standardUserData.userName, standardUserData.password)
+    cy.url().should('equal', `${Cypress.env('baseUrl')}/inventory.html`)
+
+    cy.logout()
+    cy.url().should('equal', `${Cypress.env('baseUrl')}/`)
   })
 })
