@@ -20,7 +20,7 @@ describe('login tests', () => {
     /*
       If login was successful, it should redirect to 'https://www.saucedemo.com/inventory.html'
       and the title of the page shoud be 'Products'
-      and it shoud have at least one product item
+      and it should have at least one product item
     */
     cy.url().should('equal', `${Cypress.env('baseUrl')}/inventory.html`)
     cy.get('.title').contains('Products').should('be.visible')
