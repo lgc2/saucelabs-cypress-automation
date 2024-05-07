@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Cypress run
-        run: npm run ci
+        run: npm run cypress:run
 
       - name: Publish Report
         uses: peaceiris/actions-gh-pages@v3
