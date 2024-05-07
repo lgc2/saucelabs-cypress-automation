@@ -1,0 +1,16 @@
+{
+  "name": "saucelabs-cypress-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run --browser chrome"
+  },
+  "keywords": [],
+  "author": "Luiz Gustavo C. Carvalho",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.8.1"
+  }
+}

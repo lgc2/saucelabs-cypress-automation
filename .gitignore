@@ -1,0 +1,10 @@
+# Dependency directory
+cypress/screenshots/
+cypress/videos/
+cypress/reports/
+node_modules/
+
+# Result tests 
+cypress/videos/*
+cypress/screenshots/*
+cypress/reports/junit/*
