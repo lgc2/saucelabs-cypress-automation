@@ -14,7 +14,7 @@ describe('authentication tests', () => {
     cy.url().should('equal', `${Cypress.env('baseUrl')}/inventory.html`)
   })
 
-  it('should display the products page after log in successfully', () => {
+  it('should display the products page after logging in successfully', () => {
     cy.login(standardUserData.userName, standardUserData.password)
 
     /*
