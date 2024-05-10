@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
-import standardUserData from '../../fixtures/standard-user-data.json'
-import purchaseData from '../../fixtures/purchase-data.json'
+import standardUserData from '../fixtures/standard-user-data.json'
+import purchaseData from '../fixtures/purchase-data.json'
 
 describe('purchase flow tests', () => {
   beforeEach(() => {

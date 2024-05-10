@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-import standardUserData from '../../fixtures/standard-user-data.json'
+import standardUserData from '../fixtures/standard-user-data.json'
 
 describe('authentication tests', () => {
   beforeEach(() => {
