@@ -7,6 +7,13 @@ module.exports = defineConfig({
   env: {
     baseUrl: 'https://www.saucedemo.com'
   },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "mochawesome-report",
+    "overwrite": false,
+    "html": false,
+    "json": true
+  },
   e2e: {
     specPattern: '**/*.spec.js',
     setupNodeEvents(on, config) {

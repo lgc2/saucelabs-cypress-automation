@@ -9,3 +9,6 @@ node_modules/
 cypress/videos/*
 cypress/screenshots/*
 cypress/reports/junit/*
+mochawesome-report/*
+public/*
+index.json

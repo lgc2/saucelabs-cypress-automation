@@ -25,3 +25,15 @@ jobs:
 
       - name: Cypress run
         run: npm run cypress:run
+
+      - name: Merge report
+        run: npm run combine:report
+
+      - name: Generate report
+        run: npm run generate:report
+
+      - name: Publish Report
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
