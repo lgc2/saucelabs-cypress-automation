@@ -14,11 +14,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Delete gh-pages branch
-        run: |
-          git fetch --prune --tags
-          git push --force origin --delete gh-pages || true
-        
       - name: Setup node
         uses: actions/setup-node@v4
         with:
