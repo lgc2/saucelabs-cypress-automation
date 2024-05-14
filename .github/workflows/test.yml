@@ -11,6 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: Delete gh-pages branch
+        uses: peaceiris/actions-delete-branch@v4
+        with:
+          branch: gh-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}      
+      
       - name: Checkout
         uses: actions/checkout@v4
         
